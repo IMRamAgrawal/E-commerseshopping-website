@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    
+
+}
+nav{
+    width:100vw;
+    height: 7vh;
+    box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.185);
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 60px; */
+}
+nav img{
+    width:50px;
+}
+nav a{
+text-decoration: none;
+/* background-color: brown; */
+padding-top: 2vh;
+padding-left: 20px;
+vertical-align: center;
+color: black;
+display: flex;
+align-items: center;
+/* justify-content: center; */
+
+}
+nav .icon:hover{
+    cursor: pointer;
+    /* border: 1px solid black; */
+     padding:5px;
+    background-color: rgba(0, 0, 0, 0.166); ;
+}
+h2{
+    text-align: center;
+    padding-top: 20px;
+}
+.Products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    padding: 20px;
+    /* background-color: red; */
+ 
+}
+.product-image {
+    width:100%;
+    position: relative;
+    border: 1px solid black;
+    padding: 10px;
+    /* background-color: blue; */
+    /* height: 100%; */
+   /* background-color:blue; */
+}
+.product-image img{
+    width:100%;
+    /* display: hidden; */
+    background-color: brown;
+}
+.product-image .cart-icon{
+    /* background-color: red; */
+    width:40px;
+    padding-bottom: 0;
+    position: absolute;
+    bottom:0;
+    right:0;
+    border:1px solid black;
+}
+.product-image:hover{
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.166);
+cursor: pointer;
+}
+.product-image .cart-icon:hover{
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.166);
+}
+.right{
+    position: fixed;
+    top:0;
+    right:0;
+    width:30vw;
+    height: 100vh;
+    background-color: white;
+    visibility: hidden;
+}
+.right .x{
+    /* background-color: red; */
+width:20px;
+position: fixed;
+top:20px;
+right:20px;
+/* margin-top: 50px; */
+}
+.display{
+    visibility: visible;
+}
+.right img:hover{
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.004);  
+}
+.right .cart-item{
+    padding: 20px;
+    /* background-color: aqua; */
+    display:inline-flex;
+    /* justify-content: center; */
+}
+.right .cart-item p{
+    padding-left: 20px;
+}
+.right .cart-item .delete{
+    height:20px;
+  position: relative;
+  left:50px;
+    /* background-color: red; */
+}
+.right h1{
+    text-align: center;
+     margin-top: 70px;
+}
+.total{
+    width:90%;
+    border-top: 1.5px solid black;
+    margin: auto;
+}
+
+
